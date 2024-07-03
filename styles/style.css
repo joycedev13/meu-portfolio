@@ -1,0 +1,100 @@
+:root {
+    --color-black: #000000;
+    --color-red: #e53939;
+    --color-white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.menu {
+    padding: 1rem;
+    background-color: var(--color-red);
+}
+
+.menu__navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+}
+
+.menu__links {
+    color: var(--color-white);
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.presentation {
+    padding: 5rem 24rem;
+}
+
+.presentation__text-ola {
+    font-size: 20px;
+    padding: 1rem 0;
+}
+
+.presentation__title {
+    font-size: 54px;
+    color: var(--color-red);
+}
+
+.presentation__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    margin: 2rem 16rem;
+}
+
+.presentation__text {
+    font-size: 20px;
+    padding: 0.4rem 0;
+}
+
+.marked-text {
+    color: var(--color-red);
+}
+
+.presentation__text::before {
+    content: '•';
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: var(--color-red);
+}
+
+.apresentation__imagem {
+    width: 24rem;
+    border-radius: 50%;
+    box-shadow: 0 0 100px var(--color-red);
+}
+
+.about-me {
+    margin: 16rem 9rem;
+    border: solid 1px var(--color-red);
+    border-radius: 16px;
+    padding: 2.5rem;
+}
+
+.about-me__title {
+    font-size: 30px;
+    margin-bottom: 2rem;
+}
+
+.about-me__text {
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+

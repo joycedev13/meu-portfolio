@@ -2,6 +2,8 @@
     --color-black: #000000;
     --color-red: #e53939;
     --color-white: #ffffff;
+
+    --font: "Roboto", sans-serif;
 }
 
 * {
@@ -17,21 +19,30 @@ body {
     box-sizing: border-box;
     background-color: var(--color-black);
     color: var(--color-white);
+    font-family: var(--font);
 }
 
-.menu {
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
     padding: 1rem;
     background-color: var(--color-red);
+    z-index: 1000;
 }
 
-.menu__navigation {
+.navbar__content {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8rem;
 }
 
-.menu__links {
+.fa-solid {
+    font-weight: 400;
+}
+
+.navbar__links {
     color: var(--color-white);
     font-size: 24px;
     text-decoration: none;
@@ -51,12 +62,18 @@ body {
     color: var(--color-red);
 }
 
+.presentation__subtitle {
+    margin-top: 1rem;
+    font-size: 26px;
+    
+}
+
 .presentation__content {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 6rem;
-    margin: 2rem 16rem;
+    margin: 0 16rem;
 }
 
 .presentation__text {
@@ -82,15 +99,21 @@ body {
 }
 
 .about-me {
-    margin: 16rem 9rem;
+    margin-top: 16rem;
+}
+
+.about-me__content {
+    margin: 0 12rem;
     border: solid 1px var(--color-red);
     border-radius: 16px;
     padding: 2.5rem;
 }
 
 .about-me__title {
+    color: var(--color-red);
     font-size: 30px;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .about-me__text {
@@ -98,3 +121,39 @@ body {
     margin-bottom: 1rem;
 }
 
+.technologies {
+    margin: 12rem;
+    border: solid 1px var(--color-red);
+    border-radius: 16px;
+}
+
+.technologies__content {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 5rem 0;
+}
+
+.technologies__title {
+    color: var(--color-red);
+    font-size: 30px;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.technologies__images {
+    width: 15%;
+}
+
+.baseboard {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-red);
+    padding: 1rem 0;
+}
+
+.baseboard__text {
+    font-size: 16px;
+    color: var(--color-black);
+}
